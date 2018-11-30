@@ -21,10 +21,8 @@ client.on('message', msg => {
 
 
 
-
-
 	client.on('message', message =>{
-    if(message.content === '!ping'){
+    if(message.content === '?ping'){
 let start = Date.now(); message.channel.send('pong').then(message => { 
 message.edit(`\`\`\`js
 Time taken: ${Date.now() - start} ms
@@ -43,7 +41,7 @@ Discord API: ${client.ping.toFixed(0)} ms\`\`\``);
 
 	const HeRo = new Discord.Client();
 client.on('message', message => {
-var prefix = "!";
+var prefix = "?";
 
     if (message.content === prefix + "date") {
         if (!message.channel.guild) return message.reply('** This command only for servers **');  
@@ -68,7 +66,7 @@ var prefix = "!";
 
 
 	client.on('message', Sal => { // By Salto7#4595
-  if(Sal.content === '!bot') { //هنا تغير البرفيكس
+  if(Sal.content === '?bot') { //هنا تغير البرفيكس
   var embed = new Discord.RichEmbed()
   .setColor('RANDOM')
   .setThumbnail(client.user.avatarURL)
@@ -89,7 +87,7 @@ var prefix = "!";
 
 
 	client.on('message', message => {
-    if (message.content.startsWith("!avatar")) {
+    if (message.content.startsWith("?avatar")) {
         if (message.author.bot) return
         var mentionned = message.mentions.users.first();
     var omar;
