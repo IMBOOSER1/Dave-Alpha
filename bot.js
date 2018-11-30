@@ -153,12 +153,6 @@ client.user.setGame(`Dave-Alpha`,"https://www.twitch.tv/settings/profile")
 
 
 
-client.on("message", async message => {
-  if(command === "?say") {
-    const sayMessage = args.join(" ");
-    message.delete().catch(O_o=>{}); 
-    message.channel.send(sayMessage);
-  }
   
 
 
